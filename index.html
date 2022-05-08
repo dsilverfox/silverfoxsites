@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Silverfox Sites</title>
+    <link rel="shortcut icon" href="./Assets/favicon.jpg">
+</head>
+
+<body class="body">
+    <header>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col align-self-center">
+                    <h1>Silverfox
+                        <img class="img-responsive logo" src="./Assets/Logo Shield.png" alt="Silverfox Sites Logo">
+                        Sites
+                    </h1>
+                </div>
+            </div>
+            <nav class="row justify-content-center">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#consultation">Consultation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <hr />
+    <main>
+        <article>
+            <h2 id="aboutus">Your story. Your way. Your voice.</h2>
+            <div class="row">
+                <div class="col">
+                    <h4>At Silverfox Sites, we do more than design websites. We tell stories. Your business is a story.
+                        A story of success. A story of freedom.</h4>
+                </div>
+                <div class="col">
+                    <img class="img-responsive" src="./Assets/story.jpg" alt="book on white background">
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2 id="testimonials">A word from our customers.</h2>
+            <div class="row">
+                <div class="col">
+                    <img class="img-responsive" src="./Assets/review.jpg" alt="black and white typewriter">
+                </div>
+                <div class="col">
+                    <h4>D. Palmer states: Professional, friendly, and absolutely perfect for what I needed!</h4>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2 id="consultation">Consultation</h2>
+            <div class="row">
+                <div class="col">
+                    <h4>Custom design is the name of the game. That means before we create your site we need to get some information from you about how you want the site designed.</h4>
+
+                    <h4>Process:</h4>
+                    <ul>
+                    <h4>Consultation</h4>
+                    <li>We are able to complete the consultation process in a variety of ways.</li>
+                    <li>We can complete it through email.</li>
+                    <li>We can complete it over the phone.</li>
+                    <li>We can complete it via Zoom.</li>
+                    <li>Due to personal issues we are currently avoiding meeting in person, but if absolutely necessary and at least once during the process we will. This is usually during the launch.</li>
+                    <h4>Hosting</h4>
+                    <li>For your security we will connect you with a hosting service so that you own the account where your site is being hosted.</li>
+                    <h4>Domain</h4>
+                    <li>If you do not own your domain yet, you can register one through the hosting site.</li>
+                    <li>If you already own your domain we will work with you to ensure your domain points to your new site.</li>
+                    <h4>Launch</h4>
+                    <li>If you have someone already in mind to launch the site we will provide the files directly to you.</li>
+                    <li>If you need us to launch the site for you (which we do at no additional charge) we will launch the site by making use of your SFTP username and password provided by the hosting service.</li>
+                    <li>For your security we will not have access to the account itself.</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img class="img-responsive" src="./Assets/consultation.jpg" alt="book on white background">
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2 id="pricing">Pricing Options</h2>
+            <div class="row">
+                <div class="col">
+                    <img class="img-responsive" src="./Assets/price.jpg" alt="black and white typewriter">
+                </div>
+                <div class="col">
+                    <h4>Here at Silverfox Sites, we understand it can be hard for a small business to have the capital to build a website all at once. Even though they know they need one. To that end we have multiple payment options available.</h4>
+                    <ul><h4>Full price upfront.</h4>
+                        <li>For some companies it is easier for them to pay everything up front and be done with it.</li>
+                    </ul>
+                    <ul><h4>50% upfront/50% on delivery</h4>
+                        <li>So far, our most popular payment package.</li>
+                    </ul>
+                    <ul><h4>Phased Rollout</h4>
+                        <li>Since all packages come with a stated per page rate this allows you to pay for pages as they launch.</li>
+                        <li>A phased rollout can be done in either the full payment upfront or in the 50%/50% pricing options.</li>
+                    </ul>
+                    <h4>Other options can be discussed during the consultation.</h4>
+                    
+                </div>
+            </div>
+        </article>
+    </main>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button.
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
